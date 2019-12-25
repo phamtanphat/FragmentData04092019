@@ -7,8 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <FrameLayout
-       android:id="@+id/frameContainer"
+   <TextView
+       android:id="@+id/tvTitleMain"
+       android:textColor="#0048FF"
+       android:layout_centerHorizontal="true"
+       android:textSize="40sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Main Activity" />
+   <Button
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:layout_below="@id/tvTitleMain"
+       android:text="Click Activity"
+       android:id="@+id/buttonActivity"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+   <fragment
+       android:layout_marginTop="10dp"
+       android:layout_below="@id/buttonActivity"
+       tools:layout="@layout/fragment_android"
+       android:name="com.example.fragmentdata04092019.AndroidFragment"
+       android:id="@+id/fragmentAndroid"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"/>
 

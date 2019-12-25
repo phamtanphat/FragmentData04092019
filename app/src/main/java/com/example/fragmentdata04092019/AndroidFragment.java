@@ -34,10 +34,6 @@ public class AndroidFragment extends Fragment {
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        Bundle bundle = getArguments();
-        String chuoi = bundle.getString("chuoi");
-        Integer so = bundle.getInt("so");
-        Log.d("BBB", chuoi + so);
         super.onActivityCreated(savedInstanceState);
     }
 }
